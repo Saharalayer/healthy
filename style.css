@@ -2,7 +2,7 @@ body {
   font-family: 'Cairo', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
+  background: #fff;
   color: #333;
   direction: rtl;
   text-align: center;
@@ -13,20 +13,32 @@ header {
   background: linear-gradient(135deg, #4CAF50, #81C784);
   color: white;
   padding: 30px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .logo {
-  width: 180px;
+  width: 200px;
   height: auto;
   margin-bottom: 10px;
 }
-header .tagline {
+.title-box h1 {
+  font-family: 'Almarai', sans-serif;
+  font-size: 2.5em;
+  margin: 0;
+}
+.tagline {
   font-size: 16px;
-  margin: 10px 0;
+  margin-top: 10px;
+  max-width: 600px;
 }
 nav ul {
   list-style: none;
   padding: 0;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 nav ul li {
   display: inline-block;
@@ -44,33 +56,34 @@ nav ul li a:hover {
 
 /* المنتجات */
 #products {
-  padding: 40px 20px;
+  padding: 50px 20px;
+  background: #f9f9f9;
 }
 #products h2 {
   font-family: 'Almarai', sans-serif;
   color: #4CAF50;
+  margin-bottom: 30px;
 }
 .product-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
 }
 .product {
   background: white;
-  border: 1px solid #ddd;
   border-radius: 12px;
-  width: 250px;
+  width: 260px;
   padding: 15px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 .product:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 .product img {
   width: 100%;
-  height: auto;
   border-radius: 8px;
 }
 .price {
@@ -96,8 +109,8 @@ nav ul li a:hover {
 
 /* التوصيل */
 #delivery {
-  background: #f1f1f1;
-  padding: 30px;
+  background: #e8f5e9;
+  padding: 40px;
 }
 #delivery h2 {
   font-family: 'Almarai', sans-serif;
@@ -108,7 +121,7 @@ nav ul li a:hover {
 footer {
   background: #333;
   color: white;
-  padding: 20px;
+  padding: 30px;
 }
 footer h2 {
   font-family: 'Almarai', sans-serif;
@@ -122,14 +135,4 @@ footer .social-icons a {
 footer .social-icons a:hover {
   color: #E91E63;
 }
-
-/* تجاوب مع الأجهزة */
-@media (max-width: 768px) {
-  .product-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-  .logo {
-    width: 140px;
-  }
-}
+footer .copyright
