@@ -1,3 +1,4 @@
+/* إعدادات عامة */
 body {
   font-family: 'Cairo', sans-serif;
   margin: 0;
@@ -25,7 +26,7 @@ header {
   height: auto;
   margin-bottom: 10px;
 }
-.title-box h1 {
+.title-box h1, header h1 {
   font-family: 'Almarai', sans-serif;
   font-size: 2.5em;
   margin: 0;
@@ -76,29 +77,6 @@ nav ul li a:hover {
   width: 260px;
   padding: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  footer .copyright {
-  margin-top: 15px;
-  font-size: 14px;
-  color: #bbb;
-}
-
-/* تحسين العرض على الأجهزة الصغيرة */
-@media (max-width: 768px) {
-  .product-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-  .logo {
-    width: 140px;
-  }
-  .title-box h1 {
-    font-size: 2em;
-  }
-  .tagline {
-    font-size: 14px;
-  }
-}
-
   transition: transform 0.3s, box-shadow 0.3s;
 }
 .product:hover {
@@ -139,26 +117,6 @@ nav ul li a:hover {
   font-family: 'Almarai', sans-serif;
   color: #4CAF50;
 }
-
-/* التواصل */
-footer {
-  background: #333;
-  color: white;
-  padding: 30px;
-}
-footer h2 {
-  font-family: 'Almarai', sans-serif;
-}
-footer .social-icons a {
-  color: #4CAF50;
-  text-decoration: none;
-  margin: 0 8px;
-  font-weight: bold;
-}
-footer .social-icons a:hover {
-  color: #E91E63;
-}
-footer .copyright
 
 /* قسم من نحن */
 #about {
@@ -244,4 +202,45 @@ footer .copyright
 }
 .social-icons a:hover {
   color: #E91E63;
+}
+
+/* الفوتر */
+footer {
+  background: #333;
+  color: white;
+  padding: 30px;
+}
+footer h2 {
+  font-family: 'Almarai', sans-serif;
+}
+footer .social-icons a {
+  color: #4CAF50;
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: bold;
+}
+footer .social-icons a:hover {
+  color: #E91E63;
+}
+footer .copyright {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* تجاوب مع الأجهزة */
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    width: 140px;
+  }
+  .title-box h1, header h1 {
+    font-size: 2em;
+  }
+  .tagline {
+    font-size: 14px;
+  }
 }
