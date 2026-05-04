@@ -1,0 +1,102 @@
+/* إعدادات عامة */
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  direction: rtl;
+  text-align: center;
+}
+
+/* رأس الصفحة */
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 20px;
+}
+header h1 {
+  font-family: 'Al Jazeera', sans-serif;
+  margin: 0;
+}
+header .tagline {
+  margin: 10px 0;
+  font-size: 14px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* المنتجات */
+#products {
+  padding: 40px 20px;
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.product {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  padding: 15px;
+}
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.price {
+  color: #E91E63;
+  font-weight: bold;
+}
+
+/* زر واتساب */
+.whatsapp-btn {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* التوصيل */
+#delivery {
+  background: #f1f1f1;
+  padding: 30px;
+}
+
+/* التواصل */
+footer {
+  background: #333;
+  color: white;
+  padding: 20px;
+}
+footer .social-icons a {
+  color: #4CAF50;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/* تجاوب مع الأجهزة */
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
