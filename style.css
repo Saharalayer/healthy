@@ -43,7 +43,16 @@ nav ul li a {
 nav ul li a:hover {
   color: #E91E63;
 }
-
+.logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .logo {
+    width: 140px;
+  }
+}
 /* المنتجات */
 #products {
   padding: 40px 20px;
